@@ -1,0 +1,14 @@
+<table class="table">
+<tr>
+    <td>Sl.No</td>
+    <td>Climate</td>
+    <td>Place</td>
+</tr>
+<tr *ngFor="let data of c;index as i">
+    <td>{{i+1}}</td>
+    <td>{{data.climate}}</td>
+    <td>{{data.place}}</td>
+    
+</tr>
+
+</table>

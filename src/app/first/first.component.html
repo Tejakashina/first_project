@@ -1,0 +1,6 @@
+<p>This is parent</p>
+<button  (click)="toggle()">submit</button>
+<input type="text" [(ngModel)]="empName">
+<app-second *ngIf="child" [empName]="empName">
+    <h1>hi hello teja</h1>
+</app-second>

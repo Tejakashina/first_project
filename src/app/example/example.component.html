@@ -1,0 +1,15 @@
+<h1>Employee Details</h1>
+<table class="table">
+    <tr>
+        <th>SL.No</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let data of empData;index as i,even as e;odd as o">
+        <td>{{i+1}}</td>
+        <td>{{data.empName | uppercase}}</td>
+        <td>{{data.empSalary}}</td>
+        <p *ngIf="e">this is even</p>
+        <p *ngIf="o">this is odd</p>
+    </tr>
+</table>

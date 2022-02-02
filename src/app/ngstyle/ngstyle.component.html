@@ -1,0 +1,18 @@
+<h1>Goa</h1>
+<label for="">Enter your name..</label>
+<input type="text" [(ngModel)]="customerName"><br>
+<label for="">Enter your age</label>
+<input type="number" [(ngModel)]="customerAge"><br>
+<button (click)="detailssubmission()" class="btn btn-primary">submit</button>
+
+<div *ngIf="details">
+    <h2 [ngStyle]="{'color':'blue'}">{{customerName}} these are ameeneties for you</h2>
+    <ul>
+        <li [ngClass]="'success'">Food</li>
+        <li [ngClass] = "gympass()">Gym</li>
+        <li [ngClass] = "pubpass()">pub</li>
+        <li [ngClass] = "'success'">PlayArea</li>
+        <li [ngClass]= "swimmingpass()">swimmingPool</li>
+    </ul>
+</div>
+

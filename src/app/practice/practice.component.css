@@ -1,0 +1,15 @@
+p{
+text-align: center;
+border: 2px dashed pink;
+color: blueviolet;
+font: bold;
+}
+.TextColor{
+color: chartreuse;
+}
+.TextSize{
+    font-size: 70px;
+}
+.TextStyle{
+    font-style: italic;
+}

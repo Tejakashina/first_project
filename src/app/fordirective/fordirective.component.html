@@ -1,0 +1,10 @@
+<h1>These are our board members</h1>
+<ul *ngFor="let emp of empDetails;first as f;last as l">
+    <li>
+        <h4>{{emp.empName}}</h4>
+        <h4>{{emp.designation}}</h4>
+        <p *ngIf="f">This is very imp person</p>
+        <p *ngIf="l">This is the last person</p>
+    </li>
+
+</ul>
